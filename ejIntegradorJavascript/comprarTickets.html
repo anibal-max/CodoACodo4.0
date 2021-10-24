@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <title>Codo a Codo</title>
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="js.js"></script>
+    
+        <!--                  Navbar                     -->
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark  px-5" style="background-color: rgb(52, 57, 63);">
+            <div class="container-fluid">
+                
+                <a class="navbar-brand" href="index.html">                    
+                    Conf Bs As
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav justify-content-end ms-auto fw-bold">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">La conferencia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Los oradores</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link">El lugar y la fecha</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link">Conviértete en orador</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-success" href="comprarTickets.html">Comprar tickets</a>
+                    </li>
+                    </ul>
+                    
+                </div>
+            </div>
+        </nav>
+        <!--                  Navbar                     -->
+
+       
+
+
+          <!--                  Grid Cards                     -->
+          
+        <div class="container-fluid mt-5 pt-4">
+            <div class="row row-cols-1 row-cols-md-5 gap-1">
+                <div class="col"></div>
+
+                <div class="col" id="desc80">
+                <div class="card border-primary">
+                    
+                    <div class="card-body text-center py-4">
+                        
+                        <h5 class="card-title fs-4 fw-bolder">Estudiante</h5>
+                        <p class="card-text fs-5">Tienen un descuento</p>
+                        <p class="card-text fw-bold fs-5">80%</p>
+                        <p class="card-text text-muted">* presentar documentación</p>
+                        
+                    </div>
+                </div>
+                </div>
+                <div class="col" id="desc50">
+                <div class="card border-info">                    
+                    <div class="card-body text-center py-4">
+                        
+                        <h5 class="card-title fs-4 fw-bolder">Trainee</h5>
+                        <p class="card-text fs-5">Tienen un descuento</p>
+                        <p class="card-text fw-bold fs-5">50%</p>
+                        <p class="card-text text-muted">* presentar documentación</p>
+                        
+                    </div>
+                </div>
+                </div>
+                <div class="col" id="desc15">
+                <div class="card border-warning">
+                    
+                    <div class="card-body text-center py-4">                        
+                        
+                        <h5 class="card-title fs-4 fw-bolder">Junior</h5>
+                        <p class="card-text fs-5">Tienen un descuento</p>
+                        <p class="card-text fw-bold fs-5">15%</p>
+                        <p class="card-text text-muted">* presentar documentación</p>
+                        
+                    </div>
+                </div>
+                </div>
+
+                <div class="col"></div>
+                
+            </div>
+        </div>
+          <!--                  Grid Cards                     -->      
+
+        <div class="container text-center py-3">
+            <h6 class="text fs-6">VENTA</h6>
+            <h3 class="text fs-1">VALOR DE TICKET $200</h3>
+        </div>
+
+
+        <!--                  Formulario                     -->
+        <form id="formCompra" action="">
+            <div class="container-sm px-5 col col-8">
+            
+                <div class="row">
+                    <div class="col">
+                      <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre" id="nombre">
+                    </div>
+                    <div class="col">
+                      <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido" id="apellido">
+                    </div>
+                </div>
+                
+                <div class="mb-0 pt-3 pb-0">      
+                           
+                    <input type="text" class="form-control" placeholder="Correo" aria-label="Correo" id="correo">                                   
+                </div>
+    
+                <div class="row py-3">
+                    <div class="col">
+                        <label for="cantidad" class="form-label">Cantidad</label>   
+                        <input type="text" class="form-control" placeholder="cantidad" aria-label="cantidad"  id="cantidad">
+                    </div>
+                    <div class="col">
+                        <label for="categoria" class="form-label" id="selectorCategoria">Categoria</label>
+                        <select class="form-select" aria-label="Default select example" id="categoria">
+                            <option value="1">Estudiante</option>                        
+                            <option value="2">Trainee</option>
+                            <option value="3">Junior</option>
+                        </select>
+                    </div>
+                    
+                </div>
+    
+                <div class="mb-0 py-3 ">
+                    <div class="alert alert-primary fw-bold" >
+                        Total a pagar: $ <span id="resultTotal"></span>
+                    </div>
+                </div>
+                
+    
+                <div class="row">
+                    <div class="col">
+                        <div class="d-grid gap-2 pb-3">
+                            <button class="btn-lg btn-outline-light" type="button" style="background-color: rgb(150, 201, 62);" id="btnBorrar" onclick="borrarCampos()">Borrar</button>                
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="d-grid gap-2 pb-3">
+                            <button class="btn-lg btn-outline-light" type="button" style="background-color: rgb(150, 201, 62);" id="btnResumen" onclick="calcularResumen()">Resumen</button>                
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+                
+        </form>
+
+        
+        
+        <!--                  Formulario                     -->
+
+        <!--                  Footer                     -->
+
+        <nav class="nav p-3 opacity-100 justify-content-center" style="background-image: linear-gradient(to right, rgb(26,54,68), rgb(28,83,114));">
+            <div class="row align-items-center">
+                <span class="col text-center"><a class="nav-link text-white text-wrap" style="width: 6rem;" href="#">Preguntas Frecuentes</a></span>
+                <span class="col text-center"><a class="nav-link text-white" href="#">Contáctanos</a></span>
+                <span class="col text-center"><a class="nav-link text-white" href="#">Prensa</a></span>
+                <span class="col text-center"><a class="nav-link text-white" href="#">Conferencias</a></span>
+                <span class="col text-center"><a class="nav-link text-white" href="#">Terminos y Condiciones</a></span>
+                <span class="col text-center"><a class="nav-link text-white" href="#">Privacidad</a></span>
+                <span class="col text-center"><a class="nav-link text-white" href="#">Estudiantes</a></span>
+            </div>
+        </nav>
+
+      <!--                  Footer                     -->
+
+  </body>
+</html>
